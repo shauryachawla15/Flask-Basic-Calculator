@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Math Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flask Math Calculator</h1>
+    <form action="/sum" method="get">
+        <input type="number" step="any" name="num1" placeholder="Enter number 1" required><br>
+        <input type="number" step="any" name="num2" placeholder="Enter number 2" required><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <form action="/sub" method="get">
+        <input type="number" step="any" name="num1" placeholder="Enter number 1" required><br>
+        <input type="number" step="any" name="num2" placeholder="Enter number 2" required><br>
+        <button type="submit">Subtract</button>
+    </form>
+
+    <form action="/mul" method="get">
+        <input type="number" step="any" name="num1" placeholder="Enter number 1" required><br>
+        <input type="number" step="any" name="num2" placeholder="Enter number 2" required><br>
+        <button type="submit">Multiply</button>
+    </form>
+
+    <p>Enter numbers above to perform calculations</p>
+</body>
+</html>
